@@ -115,7 +115,7 @@ aside {
   text-align: left;
 }
 .filters .filter_models label, .filters .filter_money label, .filters .filter_size label, .filters .filter_marcas label {
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .filter_name {
@@ -123,4 +123,26 @@ aside {
   line-height: 1.5em;
   font-weight: 500;
   color: #0e4d71;
+}
+
+.containner_products {
+  top: -99px;
+  float: right;
+  margin: 15px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
+}
+.containner_products .product img {
+  width: 250px;
+  height: 250px;
+}
+
+.containner_footer {
+  width: 100%;
+  height: 300px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
+  background: #0d0d0d;
 }/*# sourceMappingURL=style.css.map */
