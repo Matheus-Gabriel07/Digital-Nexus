@@ -9,7 +9,118 @@
   font-family: "Montserrat", sans-serif;
 }
 
-html, body {
+html,
+body {
   scroll-behavior: "scroll";
   font-family: "Montserrat";
+}
+
+header {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  background-color: #0e4d71;
+}
+
+#logo {
+  position: absolute;
+  left: 12.5%;
+  font-family: "Major Mono Display";
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 1px;
+  line-height: 1.2em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.containner_menu {
+  position: absolute;
+  left: calc(80% + 10px);
+}
+.containner_menu a {
+  margin: 8px;
+  padding: 4px;
+  z-index: 1;
+  text-decoration: none;
+  color: #ffffff;
+  transition: 0.8s;
+}
+.containner_menu a:hover {
+  padding: 10px;
+  border: 0;
+  border-radius: 100px;
+  background-color: #146fa4;
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.25));
+  transition: 0.5s;
+}
+.containner_menu a:active {
+  background-color: #ffffff;
+  color: #0e4d71;
+}
+
+.products_section {
+  margin-left: 10px;
+}
+
+.containner_name-product {
+  font-family: "Montserrat";
+  font-size: 1em;
+  color: #0e4d71;
+}
+.containner_name-product h2 {
+  text-decoration: underline;
+}
+.containner_name-product .track_caminho a {
+  gap: 8px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: #d2d9d2;
+}
+.containner_name-product .track_caminho a::before {
+  content: ">";
+  margin: 5px;
+  z-index: 1;
+}
+.containner_name-product .track_caminho a:first-child::before {
+  content: " ";
+  margin: 5px;
+  z-index: 1;
+}
+
+aside {
+  margin: 10px 15px;
+  padding: 10px;
+  width: 16.6666666667%;
+  border: 0;
+  border-radius: 15px;
+  text-align: right;
+  background-color: #d2d9d2;
+}
+
+#recolher {
+  font-size: 10px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #0e4d71;
+}
+
+.filters .filter_models, .filters .filter_money, .filters .filter_size, .filters .filter_marcas {
+  margin: 5px 0;
+  display: grid;
+  gap: 0.5em;
+  text-align: left;
+}
+.filters .filter_models label, .filters .filter_money label, .filters .filter_size label, .filters .filter_marcas label {
+  font-size: 12px;
+}
+
+.filter_name {
+  font-size: 1em;
+  line-height: 1.5em;
+  font-weight: 500;
+  color: #0e4d71;
 }/*# sourceMappingURL=style.css.map */
